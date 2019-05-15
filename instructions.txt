@@ -1,0 +1,23 @@
+Compile command (From the hanabi folder): 
+
+Windows git bash:
+	 javac -Xlint -classpath "javafx-2.4.0.Final.jar;json.jar;gson-2.2.2.jar;." AIPlayer.java Board.java BoardSubscriber.java Card.java Controller.java DiscardPile.java Gamestate.java Hand.java HumanPlayer.java Main.java Player.java Server.java testfx.java View.java App.java
+Linux Konsole:	
+	 javac -Xlint -classpath "javafx-2.4.0.Final.jar:json.jar:gson-2.2.2.jar:." AIPlayer.java Board.java BoardSubscriber.java Card.java Controller.java DiscardPile.java Gamestate.java Hand.java HumanPlayer.java Main.java Player.java Server.java testfx.java View.java App.java
+
+Run command (From the Code folder):
+
+To Join (Windows git bash):
+	 java -cp ".;hanabi/json.jar;hanabi/javafx-2.4.0.Final.jar;hanabi/gson-2.2.2.jar" hanabi.App -j -p 2 -n 'your nsid' -t 'token' -i ###### -k 'secret' 
+To Join (Konsole linux):
+    java -cp ".:hanabi/json.jar:hanabi/javafx-2.4.0.Final.jar:hanabi/gson-2.2.2.jar:hanabi" hanabi.App -j -p 2 -n 'your nsid' -t 'token' -i ###### -k 'secret' 
+
+To Create (Windows git bash):
+    java -cp ".;hanabi/json.jar;hanabi/javafx-2.4.0.Final.jar;hanabi/gson-2.2.2.jar" hanabi.App -f -p 2 -n 'your nsid' -q ## -k 'secret' 
+To create (Linux konsole):
+    java -cp ".:hanabi/json.jar:hanabi/javafx-2.4.0.Final.jar:hanabi/gson-2.2.2.jar" hanabi.App -f -p 2 -n 'your nsid' -q ## -k 'secret' 
+
+
+
+TO RUN OUR EXECUTABLE JAR FILE (FROM THE FOLDER YOU DOWNLOAD THE .JAR file in):
+    java -jar hanabi.jar -n drp882 -f -p 2 -q 60 -k 6ba5a2868964dd7e52be54d935c743e0 (or other options as you see fit). 
